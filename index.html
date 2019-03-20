@@ -201,7 +201,6 @@
             )
         }
 
-
         function question4() {
             $("#display").html("<div class='question'><h3><span id='question'>Question 4</span></h3></div><br><div class='answer'><h1><span id='answerOne'>AnswerOne</span></h1></div><div class='answer'><h1><span id='answerTwo'>AnswerTwo</span></h1></div><div class='answer'><h1><span id='answerThree'>AnswerThree</span></h1></div><div class='answer'><h1><span id='answerFour'>AnswerFour</span></h1></div>");
 
@@ -294,7 +293,6 @@
             )
         }
 
-
         function question6() {
             $("#display").html("<div class='question'><h3><span id='question'>Question 6</span></h3></div><br><div class='answer'><h1><span id='answerOne'>AnswerOne</span></h1></div><div class='answer'><h1><span id='answerTwo'>AnswerTwo</span></h1></div><div class='answer'><h1><span id='answerThree'>AnswerThree</span></h1></div><div class='answer'><h1><span id='answerFour'>AnswerFour</span></h1></div>");
 
@@ -321,7 +319,6 @@
             )
         }
 
-
         function q6Correct() {
             correctAnswers++;
             console.log("Correct answers: " + correctAnswers);
@@ -341,7 +338,6 @@
             }
             )
         }
-
 
         function question7() {
             $("#display").html("<div class='question'><h3><span id='question'>Question 7</span></h3></div><br><div class='answer'><h1><span id='answerOne'>AnswerOne</span></h1></div><div class='answer'><h1><span id='answerTwo'>AnswerTwo</span></h1></div><div class='answer'><h1><span id='answerThree'>AnswerThree</span></h1></div><div class='answer'><h1><span id='answerFour'>AnswerFour</span></h1></div>");
@@ -369,7 +365,6 @@
             )
         }
 
-
         function q7Correct() {
             correctAnswers++;
             console.log("Correct answers: " + correctAnswers);
@@ -389,8 +384,6 @@
             }
             )
         }
-
-
 
         function question8() {
             $("#display").html("<div class='question'><h3><span id='question'>Question 8</span></h3></div><br><div class='answer'><h1><span id='answerOne'>AnswerOne</span></h1></div><div class='answer'><h1><span id='answerTwo'>AnswerTwo</span></h1></div><div class='answer'><h1><span id='answerThree'>AnswerThree</span></h1></div><div class='answer'><h1><span id='answerFour'>AnswerFour</span></h1></div>");
@@ -437,7 +430,6 @@
             }
             )
         }
-
 
         function question9() {
             $("#display").html("<div class='question'><h3><span id='question'>Question 9</span></h3></div><br><div class='answer'><h1><span id='answerOne'>AnswerOne</span></h1></div><div class='answer'><h1><span id='answerTwo'>AnswerTwo</span></h1></div><div class='answer'><h1><span id='answerThree'>AnswerThree</span></h1></div><div class='answer'><h1><span id='answerFour'>AnswerFour</span></h1></div>");
@@ -487,7 +479,7 @@
         }
 
         function question10() {
-            $("#display").html("<div class='question'><h3><span id='question'>Question</span></h3></div><br><div class='answer'><h1><span id='answerOne'>AnswerOne</span></h1></div><div class='answer'><h1><span id='answerTwo'>AnswerTwo</span></h1></div><div class='answer'><h1><span id='answerThree'>AnswerThree</span></h1></div><div class='answer'><h1><span id='answerFour'>AnswerFour</span></h1></div>");
+            $("#display").html("<div class='question'><h3><span id='question'>Question 10</span></h3></div><br><div class='answer'><h1><span id='answerOne'>AnswerOne</span></h1></div><div class='answer'><h1><span id='answerTwo'>AnswerTwo</span></h1></div><div class='answer'><h1><span id='answerThree'>AnswerThree</span></h1></div><div class='answer'><h1><span id='answerFour'>AnswerFour</span></h1></div>");
 
             $("#answerOne").on("click", function () {
                 console.log("AnswerOne works");
@@ -534,10 +526,20 @@
 
         function results() {
             $("#display").html("You have chosen " + correctAnswers + " correct answers and " + incorrectAnswers + " incorrect answers. <button id='reset'>Play Again</button>");
-        //     $("#reset").on("click", function () {
-        //         // results(); <--- hook this up later.
-        }
+            $("#reset").on("click", function () {
+                reset();
+        })}
 
+        function reset() {
+            correctAnswers = 0;
+            incorrectAnswers = 0;
+            $("#display").html("This is where the instructions would go. <button id='start'>Start</button>");
+            $("#start").on("click", function () {
+                console.log("The start button works");
+                question1();
+            }
+            )
+        }
     
 
 
