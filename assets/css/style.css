@@ -1,0 +1,38 @@
+body {
+    background-image: url("../images/just-waves.png");
+}
+
+.container {
+    background-color: white;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+.answer {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.question {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 320px) {
+    .container {
+      width: 320x;
+    }
+
+@media (min-width: 568px) {
+    .container {
+      width: 568x;
+    }
+
+    @media (min-width: 960px) {
+        .container {
+          width: 720x;
+        }
