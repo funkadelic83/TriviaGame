@@ -2,7 +2,7 @@ var correctAnswers = 0;
 var incorrectAnswers = 0;
 
 window.onload = function () {
-    $("#question").html("How much do you know about politics? American politics is a circus, and this quiz will test how smart you are about our collective stupidity. Questions will range in difficulty from everyday knowledge to the obscure.");
+    $("#question").html("American politics is a circus, and this (completely arbitrary) quiz will test how smart you are about our collective stupidity. Questions will range in difficulty from everyday knowledge to the obscure.");
     $("#answer").html("<button id='start'>Play Now</button>");
     $("#start").on("click", function () {
         question1();
@@ -46,8 +46,8 @@ function question1() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
-            $("#answer").html('<button id="start">Next</button>');
+            $("#question").html('<div class="question">Time is up! But none of us are perfect. It was Christine O&#8217;Donnell. Watch the ad here:</div>');
+            $("#answer").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/uxJyPsmEask" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><button id="start">Next</button>');
             $("#timer").html('');
             $("#start").on("click", function () {
                 question2();
@@ -89,7 +89,7 @@ function question2() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
+            $("#question").html('<div class="question">Time is up! It was Johnson that was allegedly obsessed with his own Johnson. Google it!</div>');
             $("#answer").html('<button id="start">Next</button>');
             $("#timer").html('');
             $("#start").on("click", function () {
@@ -131,8 +131,8 @@ function question3() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
-            $("#answer").html('<button id="start">Next</button>');
+            $("#question").html('<div class="question">Time is up! It was Jimmy McMillan. The rent is too damn high!</div>');
+            $("#answer").html("<iframe src='https://giphy.com/embed/7UTzst0kIhfiM' width='480' height='327' frameBorder='0' class='giphy-embed' allowFullScreen></iframe><br><button id='start'>Next</button>");
             $("#timer").html('');
             $("#start").on("click", function () {
                 question4();
@@ -156,7 +156,7 @@ function question3() {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("Incorrect! It was Jimmy McMillan.");
+        $("#question").html("Incorrect! It was Jimmy McMillan. The rent is too damn high!");
         $("#answer").html("<iframe src='https://giphy.com/embed/7UTzst0kIhfiM' width='480' height='327' frameBorder='0' class='giphy-embed' allowFullScreen></iframe><p><br><button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question4();
@@ -173,7 +173,7 @@ function question4() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
+            $("#question").html('<div class="question">Time is up! Andrew Yang will debate Ben Shapiro about circumcision on Sunday. Why tho??!</div>');
             $("#answer").html('<button id="start">Next</button>');
             $("#timer").html('');
             $("#start").on("click", function () {
@@ -214,8 +214,8 @@ function question5() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
-            $("#answer").html('<button id="start">Next</button>');
+            $("#question").html('<div class="question">Time is up! It was Brian Kemp.</div>');
+            $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/4ABRz_epvic' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");
             $("#timer").html('');
             $("#start").on("click", function () {
                 question6();
@@ -229,7 +229,7 @@ function question5() {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("Correct! It was Brian Kemp");
+        $("#question").html("Correct! It was Brian Kemp.");
         $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/4ABRz_epvic' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");
         $("#start").on("click", function () {
             question6();
@@ -239,7 +239,7 @@ function question5() {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("Wrong! It was Brian Kemp");
+        $("#question").html("Wrong! It was Brian Kemp.");
         $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/4ABRz_epvic' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question6();
@@ -256,7 +256,7 @@ function question6() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
+            $("#question").html('<div class="question">Time is up! It was US Border Patrol that sponsored a NASCAR team to help with recruitment -but they failed to meet their recruitment goals. Nothing stops border crossers like driving around in a circle really fast!</div>');
             $("#answer").html('<button id="start">Next</button>');
             $("#timer").html('');
             $("#start").on("click", function () {
@@ -298,7 +298,7 @@ function question7() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
+            $("#question").html('<div class="question">Time is up! According to the Brennan Center for justice, 11% of eligible voters do not have a valid government-issued ID. Voter ID laws could make it difficult for these people to vote.</div>');
             $("#answer").html('<button id="start">Next</button>');
             $("#timer").html('');
             $("#start").on("click", function () {
@@ -340,8 +340,8 @@ function question8() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
-            $("#answer").html('<button id="start">Next</button>');
+            $("#question").html('<div class="question">Time is up! It was Rick Perry, who released his infamous ad, "Strong". Weak, Rick!</div>');
+            $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/kxzONeK1OwQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");
             $("#timer").html('');
             $("#start").on("click", function () {
                 question9();
@@ -382,7 +382,7 @@ function question9() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
+            $("#question").html('<div class="question">Time is up! It was Rick Santorum.</div>');
             $("#answer").html('<button id="start">Next</button>');
             $("#timer").html('');
             $("#start").on("click", function () {
@@ -424,7 +424,7 @@ function question10() {
         if (timeLeft <= 0) {
             clearInterval(questionTimer);
             incorrectAnswers++;
-            $("#question").html('<div class="question">Time is up!</div>');
+            $("#question").html('<div class="question">Time is up! It was Jimmy Carter, who lost his second term to Ronald Reagan.</div>');
             $("#answer").html('<button id="start">View Results</button>');
             $("#timer").html('');
             $("#start").on("click", function () {
@@ -457,19 +457,19 @@ function question10() {
 }
 
 function results() {
-    $("#question").html("You have chosen " + correctAnswers + " correct answers and " + incorrectAnswers + " incorrect answers.");
-    $("#answer").html("Your score is " + (correctAnswers/10)*100 + "%. <br><button id='start'>Play Again</button>");
+    $("#question").html("You have chosen " + correctAnswers + " correct answers and " + incorrectAnswers + " incorrect answers. Your score is " + (correctAnswers/10)*100 + "%. <br>");
+    $("#answer").html("<button id='start'>Play Again</button>");
     $("#start").on("click", function () {
+        correctAnswers = 0;
+        incorrectAnswers = 0;
         reset();
     })}
 
 function reset() {
     correctAnswers = 0;
     incorrectAnswers = 0;
-    $("#question").html("This is where the instructions would go.");
+    $("#question").html("American politics is a circus, and this (completely arbitrary) quiz will test how smart you are about our collective stupidity. Questions will range in difficulty from everyday knowledge to the obscure.");
     $("#answer").html("<button id='start'>Play Now</button>");
     $("#start").on("click", function () {
         question1();
-    }
-    )
-}
+    })}
