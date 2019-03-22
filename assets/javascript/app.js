@@ -96,25 +96,25 @@ function question2() {
                 question3();
         })
     }}
-    $("#question").html("<div class='question'>Which US President made the Bush tax cuts permanent?</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>George W. Bush</span></div><div class='answer'><span id='answerTwo'>Barack Obama</span></div><div class='answer'><span id='answerThree'>The Bush tax cuts have expired.</span></div><div class='answer'><span id='answerFour'>Donald J. Trump</span></div>");
+    $("#question").html("<div class='question'>Which US President was rumored to whip out his member in private meetings?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>Donald J. Trump</span></div><div class='answer'><span id='answerTwo'>Lyndon B. Johnson</span></div><div class='answer'><span id='answerThree'>Herbert Hoover</span></div><div class='answer'><span id='answerFour'>Ronald Reagan</span></div>");
     glowSelected();
 
     $("#answerTwo").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("Correct! Before the Bush tax cuts, the top marginal tax rate was 39.6 percent. After the cuts, the top rate was 35%. The Bush tax cuts were set to expire in 2010, Barack Obama made the Bush Tax cuts permanent (after a temporary, 2-year extension).");
+        $("#question").html("Correct! Johnson was allegedly obsessed with his own Johnson. Google it!");
         $("#answer").html("<button id='start'>Next</button>");
         $("#start").on("click", function () {
             question3();
         })})
 
-    $("#answerTwo, #answerThree, #answerFour").on("click", function () {
+    $("#answerOne, #answerThree, #answerFour").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
+        $("#question").html("Incorrect! It was Johnson that was allegedly obsessed with his own Johnson. Google it!");
         $("#answer").html("<button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question3();
@@ -138,26 +138,26 @@ function question3() {
                 question4();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 3</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>Who is the founder if the 'Rent is Too Damn High' party?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>Jesse Ventura</span></div><div class='answer'><span id='answerTwo'>Andrew Yang</span></div><div class='answer'><span id='answerThree'>John McAfee</span></div><div class='answer'><span id='answerFour'>Jimmy McMillan</span></div>");
     glowSelected();
 
-    $("#answerOne").on("click", function () {
+    $("#answerFour").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
-        $("#answer").html("<button id='start'>Next</button>");
+        $("#question").html("Correct! The rent is too damn high!");
+        $("#answer").html("<iframe src='https://giphy.com/embed/7UTzst0kIhfiM' width='480' height='327' frameBorder='0' class='giphy-embed' allowFullScreen></iframe><br><button id='start'>Next</button>");
         $("#start").on("click", function () {
             question4();
         })})
 
-    $("#answerTwo, #answerThree, #answerFour").on("click", function () {
+    $("#answerTwo, #answerThree, #answerOne").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
-        $("#answer").html("<button id='start'>Next</button>");;
+        $("#question").html("Incorrect! It was Jimmy McMillan.");
+        $("#answer").html("<iframe src='https://giphy.com/embed/7UTzst0kIhfiM' width='480' height='327' frameBorder='0' class='giphy-embed' allowFullScreen></iframe><p><br><button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question4();
         })})
@@ -180,15 +180,15 @@ function question4() {
                 question5();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 4</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>Which 2020 presidential candidate will debate Ben Shapiro about circumcision?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>Andrew Yang</span></div><div class='answer'><span id='answerTwo'>Bernie Sanders</span></div><div class='answer'><span id='answerThree'>John Hickenlooper</span></div><div class='answer'><span id='answerFour'>Jay Inslee</span></div>");
     glowSelected();
 
     $("#answerOne").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
+        $("#question").html("Correct! Andrew Yang will debate Ben Shapiro about --circumcision??! What is wrong with this world?");
         $("#answer").html("<button id='start'>Next</button>");
         $("#start").on("click", function () {
             question5();
@@ -198,7 +198,7 @@ function question4() {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
+        $("#question").html("Incorrect. Andrew Yang will debate Ben Shapiro about circumcision on Sunday. Why tho??!");
         $("#answer").html("<button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question5();
@@ -221,26 +221,26 @@ function question5() {
                 question6();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 5</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>Which Republican Governor jokingly threatened a teen with a shotgun in a campaign ad in 2018?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>Ron DeSantis</span></div><div class='answer'><span id='answerTwo'>Brian Kemp</span></div><div class='answer'><span id='answerThree'>Brad Little</span></div><div class='answer'><span id='answerFour'>Matt Bevin</span></div>");
     glowSelected();
 
-    $("#answerOne").on("click", function () {
+    $("#answerTwo").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
-        $("#answer").html("<button id='start'>Next</button>");
+        $("#question").html("Correct! It was Brian Kemp");
+        $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/4ABRz_epvic' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");
         $("#start").on("click", function () {
             question6();
         })})
 
-    $("#answerTwo, #answerThree, #answerFour").on("click", function () {
+    $("#answerOne, #answerThree, #answerFour").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
-        $("#answer").html("<button id='start'>Next</button>");;
+        $("#question").html("Wrong! It was Brian Kemp");
+        $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/4ABRz_epvic' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question6();
         })})
@@ -263,25 +263,25 @@ function question6() {
                 question7();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 6</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>Which US law enforcement agency spent $4 million of taxpayer money to sponsor a NASCAR team?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>The Drug Enforcement Agency</span></div><div class='answer'><span id='answerTwo'>The FBI</span></div><div class='answer'><span id='answerThree'>US Border Patrol</span></div><div class='answer'><span id='answerFour'>The Georgia State Police Department</span></div>");
     glowSelected();
 
-    $("#answerOne").on("click", function () {
+    $("#answerThree").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
+        $("#question").html("Correct! Border Patrol sponsored a NASCAR team to help with recruitment, but failed to meet their recruitment goals. Nothing stops border crossers like driving around in a circle really fast!");
         $("#answer").html("<button id='start'>Next</button>");
         $("#start").on("click", function () {
             question7();
         })})
 
-    $("#answerTwo, #answerThree, #answerFour").on("click", function () {
+    $("#answerTwo, #answerOne, #answerFour").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
+        $("#question").html("Wrong! It was US Border Patrol that sponsored a NASCAR team to help with recruitment -but they failed to meet their recruitment goals. Nothing stops border crossers like driving around in a circle really fast!");
         $("#answer").html("<button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question7();
@@ -305,25 +305,25 @@ function question7() {
                 question8();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 7</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>What percentage of eligible voters do not have a government-issued photo ID?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>3%</span></div><div class='answer'><span id='answerTwo'>5%</span></div><div class='answer'><span id='answerThree'>8%</span></div><div class='answer'><span id='answerFour'>11%</span></div>");
     glowSelected();
 
-    $("#answerOne").on("click", function () {
+    $("#answerFour").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
+        $("#question").html("Correct! According to the Brennan Center for justice, 11% of eligible voters do not have a valid government-issued ID. Voter ID laws could make it difficult for these people to vote.");
         $("#answer").html("<button id='start'>Next</button>");
         $("#start").on("click", function () {
             question8();
         })})
 
-    $("#answerTwo, #answerThree, #answerFour").on("click", function () {
+    $("#answerTwo, #answerThree, #answerOne").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
+        $("#question").html("Wrong! According to the Brennan Center for Justice, 11% of eligible voters do not have a valid government-issued ID. Voter ID laws could make it difficult for these people to vote.");
         $("#answer").html("<button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question8();
@@ -347,16 +347,16 @@ function question8() {
                 question9();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 8</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>Which poltician released an ad complaining that gay people can openly serve in the military, but children aren't allowed to pray in schools?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>Rick Perry</span></div><div class='answer'><span id='answerTwo'>Michelle Bachmann</span></div><div class='answer'><span id='answerThree'>Mike Pence</span></div><div class='answer'><span id='answerFour'>Mike Huckabee</span></div>");
     glowSelected();
 
     $("#answerOne").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
-        $("#answer").html("<button id='start'>Next</button>");
+        $("#question").html("Correct! It was Rick Perry, who released his infamous ad, 'Strong'. Weak, Rick!");
+        $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/kxzONeK1OwQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");
         $("#start").on("click", function () {
             question9();
         })})
@@ -365,8 +365,8 @@ function question8() {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
-        $("#answer").html("<button id='start'>Next</button>");;
+        $("#question").html("Wrong! It was Rick Perry, who released is infamous ad, 'Strong'. Weak, Rick!");
+        $("#answer").html("<iframe width='560' height='315' src='https://www.youtube.com/embed/kxzONeK1OwQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br><button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question9();
         })})
@@ -389,25 +389,25 @@ function question9() {
                 question10();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 9</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>Which US politician claimed that rape victims should make the best of their situationn and carry the baby to term -because a baby -even from rape -is a 'gift from God'?</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>Mike Pence</span></div><div class='answer'><span id='answerTwo'>Mike Huckabee</span></div><div class='answer'><span id='answerThree'>Todd Akin</span></div><div class='answer'><span id='answerFour'>Rick Santorum</span></div>");
     glowSelected();
 
-    $("#answerOne").on("click", function () {
+    $("#answerFour").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
+        $("#question").html("Correct! It was Rick Santorum.");
         $("#answer").html("<button id='start'>Next</button>");
         $("#start").on("click", function () {
             question10();
         })})
 
-    $("#answerTwo, #answerThree, #answerFour").on("click", function () {
+    $("#answerTwo, #answerThree, #answerOne").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
+        $("#question").html("Wrong! It was Rick Santorum.");
         $("#answer").html("<button id='start'>Next</button>");;
         $("#start").on("click", function () {
             question10();
@@ -431,25 +431,25 @@ function question10() {
                 results();
         })
     }}
-    $("#question").html("<div class='question'>Add Question 10</div>");
-    $("#answer").html("<div class='answer'><span id='answerOne'>AnswerOne</span></div><div class='answer'><span id='answerTwo'>AnswerTwo</span></div><div class='answer'><span id='answerThree'>AnswerThree</span></div><div class='answer'><span id='answerFour'>AnswerFour</span></div>");
+    $("#question").html("<div class='question'>After initially refusing to debate his opponent, this Democratic presidential candidate eventually agreed to only one debate -then lost the election.</div>");
+    $("#answer").html("<div class='answer'><span id='answerOne'>Al Gore</span></div><div class='answer'><span id='answerTwo'>Jimmy Carter</span></div><div class='answer'><span id='answerThree'>Dennis Kucinich</span></div><div class='answer'><span id='answerFour'>Michael Dukakis</span></div>");
     glowSelected();
 
-    $("#answerOne").on("click", function () {
+    $("#answerTwo").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         correctAnswers++;
-        $("#question").html("You have chosen wisely");
+        $("#question").html("Correct! It was Jimmy Carter, who lost his second term to Ronald Reagan.");
         $("#answer").html("<button id='start'>Next</button>");
         $("#start").on("click", function () {
             results();
         })})
 
-    $("#answerTwo, #answerThree, #answerFour").on("click", function () {
+    $("#answerOne, #answerThree, #answerFour").on("click", function () {
         clearInterval(questionTimer);
         $("#timer").html('');
         incorrectAnswers++;
-        $("#question").html("You have chosen poorly");
+        $("#question").html("Wrong! It was Jimmy Carter, who lost his second term to Ronald Reagan.");
         $("#answer").html("<button id='start'>Results</button>");;
         $("#start").on("click", function () {
             results();
@@ -458,7 +458,7 @@ function question10() {
 
 function results() {
     $("#question").html("You have chosen " + correctAnswers + " correct answers and " + incorrectAnswers + " incorrect answers.");
-    $("#answer").html("<button id='start'>Play Again</button>");
+    $("#answer").html("Your score is " + (correctAnswers/10)*100 + "%. <br><button id='start'>Play Again</button>");
     $("#start").on("click", function () {
         reset();
     })}
